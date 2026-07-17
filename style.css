@@ -1,0 +1,442 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b1120;
+    color:#fff;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(11,17,32,0.85);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+.logo i{
+    margin-right:8px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 18px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+.btn{
+    padding:12px 28px;
+    background:#38bdf8;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    transition:.3s;
+    box-shadow:0 0 20px rgba(56,189,248,.5);
+}
+
+.btn:hover{
+   .card:hover,
+.course-card:hover,
+.member:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(56,189,248,.4);
+}
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+.btn-outline{
+    padding:12px 28px;
+    border:2px solid #38bdf8;
+    border-radius:30px;
+    color:#38bdf8;
+    text-decoration:none;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.btn-outline:hover{
+    background:#38bdf8;
+    color:#fff;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8% 50px;
+    gap:50px;
+    background:linear-gradient(135deg,#0b1120,#16213e,#1e3a8a);
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:58px;
+    line-height:1.2;
+}
+
+.hero-text p{
+    margin:25px 0;
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+.hero-buttons{
+    margin-top:20px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:520px;
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+    padding:70px 8%;
+}
+
+.card{
+    background:#16213e;
+    padding:35px;
+    border-radius:18px;
+    text-align:center;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h2{
+    color:#38bdf8;
+    font-size:36px;
+}
+
+.card p{
+    margin-top:10px;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    padding:80px 8%;
+    flex-wrap:wrap;
+}
+
+.about-image,
+.about-text{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about-text h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+.about-text ul{
+    list-style:none;
+}
+
+.about-text li{
+    margin:15px 0;
+}
+
+/* ================= COURSES ================= */
+
+.courses{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.courses h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.course-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.course-card{
+    background:#16213e;
+    padding:35px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.course-card:hover{
+    transform:translateY(-12px);
+}
+
+.course-card i{
+    font-size:45px;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.course-card h3{
+    margin-bottom:12px;
+}
+
+/* ================= TEAM ================= */
+
+.instructors{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.instructors h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.team{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.member{
+    background:#16213e;
+    padding:30px;
+    border-radius:20px;
+}
+
+.member img{
+    width:160px;
+    height:160px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+}
+
+.contact p{
+    color:#cbd5e1;
+    margin:20px 0;
+}
+
+.contact form{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.contact input{
+    width:350px;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    outline:none;
+}
+
+.contact button{
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:#38bdf8;
+    color:#fff;
+    cursor:pointer;
+}
+.social{
+    margin:20px 0;
+}
+
+.social i{
+    font-size:24px;
+    margin:0 10px;
+    color:#38bdf8;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social i:hover{
+    transform:scale(1.2);
+}
+.contact{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.contact form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact input,
+.contact textarea{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+}
+
+.contact button{
+    padding:15px;
+    background:#38bdf8;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+/* ================= FOOTER ================= */
+
+footer{
+    padding:30px;
+    background:#050b18;
+    text-align:center;
+    color:#94a3b8;
+}
+
+/* ================= RESPONSIVE ================= */
+
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.about{
+    flex-direction:column;
+}
+
+}
+nav ul li a.active{
+    color:#38bdf8;
+    font-weight:600;
+}
+.hero-text,
+.hero-image,
+.card,
+.course-card,
+.member{
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
